@@ -16,9 +16,9 @@ from selenium.webdriver.support.ui import Select
 
 import smtplib
 
-email = "youremail@gmail.com"
-location = "00000" #your zip code
-distance = "10 miles" #whatever your want (has to be on the website as an option)
+email = "mwoo3456@gmail.com"
+location = "91030" #your zip code
+distance = "25 miles" #whatever your want (has to be on the website as an option)
 class TestSatchecker():
     def setup_method(self):
         service = Service('chromedriver.exe')
@@ -41,7 +41,7 @@ class TestSatchecker():
         # locate the dropdown element by id
         dropdown = Select(self.driver.find_element(By.ID, "apricot_select_4"))
         time.sleep(1)
-        dropdown.select_by_visible_text("August 26, 2023 — Saturday") #change to match your wanted date
+        dropdown.select_by_visible_text("August 24, 2024 — Saturday") #change to match your wanted date
         #dropdown.select_by_value("2023-06-03")
         #self.driver.find_element(By.ID, "student").click()
         text_input = self.driver.find_element(By.ID, "apricot_input_5")
